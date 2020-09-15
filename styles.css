@@ -50,6 +50,7 @@ header {
 
 h1 {
     color: white;
+    text-shadow: 1px 2px 10px #ffffff;
     font-family: 'Arapey', serif;
     display: flex;
     float: right;
@@ -74,4 +75,47 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/******about me paragraph**********/
+.about {
+    width: 100%;
+    background-color: rgb(202, 186, 200, .8);
+}
+
+h2 {
+    font-family: 'Arapey', serif;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+p {
+    font-family: 'Arapey', serif;
+    color: white;
+    padding: 20px;
+
+}
+
+span {
+    display: none;
+}
+
+/*********PROJECTS SECTION*********/
+
+/*****  project title ********/
+
+.projects-section {
+    margin-top: 50px;
+}
+
+.projects {
+    background-color: rgb(157, 129, 137, .8);
 }

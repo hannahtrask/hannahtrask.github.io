@@ -12,6 +12,11 @@
         padding-top: 45%;
         padding-right: 10%;
     }
+
+    h2 {
+        font-size: 3.5em;
+    }
+
     .item:first-child {
         grid-area: 1 / 1 / span 2 / span 2;
   }
@@ -19,6 +24,10 @@
         grid-column: 3;
         grid-row: 3;
   }
+
+   span {
+       display: inline;
+   }
 }
 
 @media screen and (min-width: 1024px) {
@@ -30,4 +39,20 @@
         grid-column: 1 / span 4;
         grid-row: 3/ span 2;
   }
+
+  h2 {
+      font-size: 4em;
+  }
+  
+  h5 {
+      font-size: 2em;
+  }
+
+  p {
+      font-size: 1.5em;
+  }
+
+   span {
+       display: inline;
+   }
 }
