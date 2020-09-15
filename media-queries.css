@@ -33,6 +33,17 @@
     width: 75%;
     }
 
+    .unit-text {
+    height: 100px;
+    width: 670px;
+    margin: 5px;
+}
+
+    #input-submit {
+    width: 100px;
+    height: 50px;
+}
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -63,6 +74,19 @@
 
     .carousel-inner {
     width: 60%;
+    }
+
+    #input-email {
+        width: 40%;
+    }
+
+    #input-subject {
+        width: 40%;
+        height: 35px;
+    }
+
+    .unit-text {
+        width: 50%;
     }
 
 }
