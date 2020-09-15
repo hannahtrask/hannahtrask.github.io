@@ -1,0 +1,33 @@
+@media (min-width: 480px) {
+  .item:first-child {
+    grid-area: 1 / 1 / span 2 / span 2;
+  }
+  .item:nth-child(2n) {
+    grid-column: span 2;
+  }
+}
+
+@media screen  and (min-width: 768px) {
+    h1 {
+        padding-top: 45%;
+        padding-right: 10%;
+    }
+    .item:first-child {
+        grid-area: 1 / 1 / span 2 / span 2;
+  }
+    .item:nth-child(4) {
+        grid-column: 3;
+        grid-row: 3;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        padding-top: 40%;
+    }
+
+    .item:nth-child(4) {
+        grid-column: 1 / span 4;
+        grid-row: 3/ span 2;
+  }
+}
