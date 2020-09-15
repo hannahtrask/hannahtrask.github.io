@@ -28,6 +28,11 @@
    span {
        display: inline;
    }
+
+   .carousel-inner {
+    width: 75%;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -55,4 +60,9 @@
    span {
        display: inline;
    }
+
+    .carousel-inner {
+    width: 60%;
+    }
+
 }
