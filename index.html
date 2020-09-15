@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-----STYLESHEET----->
@@ -14,15 +15,15 @@
 </head>
 
 <body>
-<header>
+<header id="top">
     <h1>hi, my name's hannah</h1>
     <div class="fixed-top">
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-dark p-4">
                 <h5 class="text-white h5">hannah catherine trask</h5>
-                <h5><a href="#">about</a></h5>
-                <h5><a href="#">projects</a></h5>
-                <h5><a href="#">contact</a></h5>
+                <h5><a href="#about">about</a></h5>
+                <h5><a href="#projects">projects</a></h5>
+                <h5><a href="#contact-me">contact</a></h5>
             </div>
         </div>
         
@@ -43,7 +44,7 @@
         <img class='item' src="/Portfolio/images/Trask_png.png" alt="">
         <img class='item' src="/Portfolio/images/skiing_trask.png" alt="">
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <h2>about me</h2>
         <h5>creative, intuitive, elegant</h5>
         <p>I am a creative-minded, tough gal with a bold spirit and adventurous attitude. <span>I pursue the wealth of experiences the
@@ -54,17 +55,50 @@
 
 </section>
 
-<section class="projects-section">
+<section class="projects-section" id="projects">
     <div class="projects">
         <h2>projects</h2>
         <h5>unit one, software engineering immersive</h5>
         <p>For the first unit, we put emphasis on learning the basics well. <span>HTML/CSS, vanilla javascript, jQuery, Bootstrap.js, and AJAX have all been implemented to make this a beautiful, functioning site.</span></p>
     </div>
+    <div class="project-display">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+<!---JQUERY INJECTED CONTENT------>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
 </section>
 
+<section class="contact-me" id="contact-me">
+    <div class="contact">
+        <h2>contact me!</h2>
+        <h5>like what you see?</h5>
+        <p class="contact-p">send me a message! let's create something together</p>
+    </div>
+    <form class="contact-information">
+        <input type="text" class="unit" id="input-name" placeholder="name">
+        <input type="text" class="unit" id="input-email" placeholder="email address">
+        <input type="text" class="unit" id="input-subject" placeholder="subject">
+        <textarea name="message" class="unit-text" id="input-message" type="text" placeholder="type your message here!"></textarea>
+        <input type="submit" value="submit" class="unit" id="input-submit">
+    </form>
+</section>
 
+<section class="footer">
+    <footer><a href="#top">back to top</a></footer>
+</section>
 
-
+<script src="/Portfolio/app.js" charset="utf-8"></script>
+</body>
 
 
 
@@ -77,9 +111,8 @@
 
 
 <!-----JQUERY------>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
 <!-----POPPER.js-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -88,6 +121,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script src="/Portfolio/styles.css" charset="UTF-8""></script>"
 </body>
 </html>
