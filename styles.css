@@ -178,8 +178,9 @@ span {
 .card {
     align-self: center;
     width: 50%;
+    margin: 50px;
     padding: 10px;
-    background-color: rgb(80, 132, 132, .1);
+    background-color: rgb(80, 132, 132, .01);
 }
 
 .card-img-top {
