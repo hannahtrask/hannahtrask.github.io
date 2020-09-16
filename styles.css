@@ -24,7 +24,9 @@ languid lavender: rgb(202, 186, 200)
 mountbatten pink: rgb(157, 129, 137)
 */
 
-
+body {
+    background-color: rgb(80, 132, 132, .2);
+}
 
 /*****NAV BAR AND HEADER******/
 header {
@@ -92,7 +94,7 @@ h1 {
 /******image gallery********/
 
 .gallery {
-  background-color: rgb(80, 132, 132, .4);
+  /* background-color: rgb(80, 132, 132, .4); */
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
