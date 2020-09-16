@@ -35,19 +35,17 @@
 
     .unit-text {
     height: 100px;
-    width: 670px;
-    margin: 5px;
+    width: 520px;
+    margin-right: 20px;
 }
 
-    #input-submit {
-    width: 100px;
-    height: 50px;
+    .prof-img {
+    display: flex;
+    height: 5%;
+    width: 17%;
+    border-radius: 45%;
+    bordeR: 2px solid rgb(157, 129, 137, .8)
 }
-
-    /* .card {
-        width: 100px;
-    } */
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -96,6 +94,20 @@
     .contact-information {
         font-size: 1.2em;
     }
+
+       .unit-text {
+    height: 200px;
+    width: 700px;
+    margin-right: 20px;
+}
+
+    .prof-img {
+    display: flex;
+    height: 5%;
+    width: 17%;
+    border-radius: 45%;
+    bordeR: 2px solid rgb(157, 129, 137, .8)
+}
 
 
 }
