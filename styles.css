@@ -43,6 +43,14 @@ a {
     font-size: 12px;
 }
 
+i {
+    font-size: 40px;
+}
+
+.bg-dark.p-4.p-5 {
+    display: none;
+}
+
 .text-white.h5 {
     font-family: 'Arapey', serif;
     font-size: 25px;
@@ -177,12 +185,14 @@ form {
 
 #input-subject {
     width: 300px;
+    flex-grow: .8;
 }
 
 .unit-text {
     height: 100px;
     width: 300px;
     margin: 5px;
+    flex-grow: 3;
 }
 
 .contact-p {

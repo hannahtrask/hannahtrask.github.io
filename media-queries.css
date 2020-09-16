@@ -17,6 +17,10 @@
         font-size: 3.5em;
     }
 
+    .social-icon {
+    display: block;
+}
+
     .item:first-child {
         grid-area: 1 / 1 / span 2 / span 2;
   }
@@ -56,6 +60,10 @@
         grid-row: 3/ span 2;
   }
 
+    .social-icon {
+    display: block;
+}
+
   h2 {
       font-size: 4em;
   }
@@ -83,10 +91,6 @@
     #input-subject {
         width: 40%;
         height: 35px;
-    }
-
-    .unit-text {
-        width: 50%;
     }
 
     .contact-information {
