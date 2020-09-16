@@ -31,10 +31,10 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
         const $title = $('<h5>').text(project.gsx$title.$t).addClass('card-title');
         const $cardDescription = $('<p>').text(project.gsx$description.$t).addClass('card-text');
 
-        $project.append($title);
+        
         $project.append($newProjectDiv);
-     
-        $newProjectDiv.append($image);
+        $newProjectDiv.append($title);
+        $title.append($image);
         $title.append($cardDescription);
 	});
     
