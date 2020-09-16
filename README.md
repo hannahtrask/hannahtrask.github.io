@@ -9,9 +9,9 @@ My schedule for the upcoming week.
 |Day 1| Project Description | Complete
 |Day 2| Wireframes / Priority Matrix / Timeline | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
-|Day 4| MVP & Bug Fixes | Incomplete
+|Day 4| Contact form and Carousel/cards | Incomplete
 |Day 5| Final Touches | Incomplete
-|Day 6| Present | Incomplete
+|Day 5| Present | Incomplete
 
 ## Project Description
 
@@ -68,13 +68,13 @@ Here is a resource I used to create my wireframes:
 
 * Basic HTML structure/CSS styles<br>
 * Project section<br>
-* Nav w/flexbox<br>
+* Nav w/flexbox <br>
 * About me section<br>
 * Embellishments/ styles<br>
 * API<br>
 * Media queries tablet<br>
 * Media queries desktop<br>
-* Social media icons/clickable profile image<br>
+* Social media icons<br>
 
 ### PostMVP
 
