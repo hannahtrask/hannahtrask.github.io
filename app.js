@@ -18,27 +18,25 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
 	//this logs to check I've called the data
 	console.log(data.feed.entry);
 
-    //this variable grabs all carousel-inner classes
-    const $project = $('.carousel-inner');
+    //this variable grabs all card-container classes
+    const $project = $('.card-container');
     
     //this loops through the provided array in data
 	const projects = data.feed.entry.forEach((project) => {
+		const $newProjectDiv = $('<div>').addClass('.card');
+        const $newInnerDiv = $('<div>').addClass('.card-body');
+		const $image = $('<img>')
+			.attr('src', project.gsx$image.$t)
+			.addClass('card-img-top');
+        const $title = $('<h5>').text(project.gsx$title.$t).addClass('card-title');
+        const $cardDescription = $('<p>').text(project.gsx$description.$t).addClass('card-text');
 
-        //this adds a new div and gives it the class carousel-item
-        const $newProjectDiv = $('<div>').addClass('carousel-item').addClass('active'); //<-----figure out how to make this dynamic
-        
-        //this adds a new image and sources it from the array, gives it classes d-block and w-100
-		const $image = $('<img>').attr('src', project.gsx$image.$t).addClass('d-block').addClass('w-100');
-        // $newProjectDiv.text(project.gsx$description.$t).addClass('text');
-
-        //this appends the new div to the carousel
+        $project.append($title);
         $project.append($newProjectDiv);
-        //this appends the image to the newly created div
-		$newProjectDiv.append($image);
-    });
+     
+        $newProjectDiv.append($image);
+        $title.append($cardDescription);
+	});
     
 
 });
-
-
-// CONTACT FORM FUNCTIONALITY
