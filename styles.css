@@ -99,7 +99,7 @@ h1 {
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-auto-rows: 300px 150px;
-  grid-auto-flow: dense;
+  grid-auto-flow: row dense;
   padding: 10px;
   margin: 0 auto;
   border-bottom: 2px solid rgb(80, 132, 132, .4);
@@ -156,17 +156,28 @@ span {
 }
 
 /****** API call **********/
-.projects-container {
+/* .projects-container {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 20px;
-}
+} */
 
 .card-container {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    padding: 20px;
+    align-content: center;
+}
+
+.card {
     align-self: center;
-    width: 300px;
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(80, 132, 132, .1);
 }
 
 .card-img-top {
@@ -178,7 +189,6 @@ span {
     font-size: 1.7em;
     background-color: rgb(157, 129, 137, .5);
     border: 1px solid rgb(157, 129, 137);
-    align-self: center;
 }
 
 .card-text {
@@ -209,8 +219,9 @@ input {
     margin: 5px;
 }
 
-#input-subject {
-    width: 300px;
+#submit-button {
+    width: 100px;
+    height: 50px;
     flex-grow: .8;
 }
 

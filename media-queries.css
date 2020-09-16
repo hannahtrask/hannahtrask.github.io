@@ -62,6 +62,10 @@
     display: flex;
 }
 
+    h1 {
+        padding-top: 300px;
+    }
+
   h2 {
       font-size: 4em;
   }
