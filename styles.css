@@ -29,7 +29,7 @@ mountbatten pink: rgb(157, 129, 137)
 /*****NAV BAR AND HEADER******/
 header {
     background-color: rgb(202, 186, 200);
-    background-image: url('./images/background_image2.png');
+    background-image: url('/Portfolio/images/background_image2\ copy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
