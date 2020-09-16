@@ -150,16 +150,36 @@ span {
 }
 
 /****** API call **********/
-
-.carousel-inner {
-    width: 90%;
-    margin: 0 auto;
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-#carouselExampleFade {
+.card {
+    height: 250px;
+    width: 200px;
+}
+
+.card-img-top {
     padding: 10px;
 }
 
+.card-title {
+    font-family: 'Arapey', serif;
+    font-size: 1.7em;
+    background-color: rgb(157, 129, 137, .5);
+    border: 1px solid rgb(157, 129, 137);
+    width: 50%;
+    align-self: center;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .5em;
+}
 
 /***********CONTACT ME SECTION************/
 .contact {
@@ -171,12 +191,13 @@ span {
 .contact-information {
     font-family: 'Montserrat', sans-serif;
     font-size: .9em;
-}
-
-form {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+}
+
+input {
+    margin: 10px;
 }
 
 .unit {
