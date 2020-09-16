@@ -23,7 +23,7 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
     
     //this loops through the provided array in data
 	const projects = data.feed.entry.forEach((project) => {
-		const $newProjectDiv = $('<div>').addClass('.card');
+		const $newProjectDiv = $('<div>').addClass('card');
         const $newInnerDiv = $('<div>').addClass('.card-body');
 		const $image = $('<img>')
 			.attr('src', project.gsx$image.$t)
