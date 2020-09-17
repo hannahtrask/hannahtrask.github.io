@@ -108,7 +108,7 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
 	//this loops through the provided array in data
 	const projects = data.feed.entry.forEach((project) => {
         const $newCard = $('<div>').addClass('project-card');
-        const $newTitle = $('<h2>').text(project.gsx$title.$t);
+        const $newTitle = $('<h2>').text(project.gsx$title.$t).addClass('project-title-text');
         const $newDescription = $('<p>').text(project.gsx$description.$t);
         const $newPhotoDiv = $('<div>').addClass('project-picture');
         const $newProjPhoto = $('<img>')

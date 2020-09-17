@@ -59,6 +59,10 @@
         font-size: 3.5em;
     }
 
+    .project-title-text {
+    font-size: 2em;
+}
+
     .about {
         height: 400px;
         padding: 50px;
@@ -202,5 +206,9 @@
        height: 20px;
        width: 20px;
    }
+
+       .project-title-text {
+    font-size: 2.75em;
+}
 
 }
