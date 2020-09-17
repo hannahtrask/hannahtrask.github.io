@@ -42,5 +42,30 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
 });
 
 
-// OTHER JQUERY EVENTS
+// OTHER EVENTS
+
+
+//////emails from emailJS API
+///vanilla JS
+            window.onload = () => {
+							document
+								.getElementById('contact-form')
+								.addEventListener('submit', function (event) {
+									event.preventDefault();
+									// generate the contact number value
+									this.contact_number.value = (Math.random() * 100000) | 0;
+                                    emailjs.sendForm('service_q6wrfnf', 'template_1fa2kx4', this);
+                                    //this resets form
+                                    $(event.currentTarget).trigger('reset');
+								});
+                        };
+                    
+// anonymous function to initiate use of user API
+            ( () => {
+				emailjs.init('user_KBxEcbif77Xh0iNNI4uvN');
+            })();
+            
+
+
+////CAROUSEL
 
