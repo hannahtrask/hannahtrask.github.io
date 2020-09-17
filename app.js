@@ -114,7 +114,6 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
         const $newProjPhoto = $('<img>')
 									.attr('src', project.gsx$image.$t)
                                     .addClass('test');
-        const $newLink = $('<a>').att-
 
         $projectSection.append($newCard);
         $newCard.append($newTitle).append($newDescription).append($newPhotoDiv);
