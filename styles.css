@@ -25,7 +25,7 @@ mountbatten pink: rgb(157, 129, 137)
 */
 
 body {
-    background-color: rgb(80, 132, 132, .22);
+    background-color: rgb(157, 129, 137, .3);
 }
 
 /*****NAV BAR AND HEADER******/
@@ -128,7 +128,7 @@ h2 {
 
 h5 {
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    /* text-align: center; */
     color: white;
     padding: 5px;
 }
@@ -136,7 +136,7 @@ h5 {
 p {
     font-family: 'Arapey', serif;
     color: white;
-    padding: 20px;
+    /* padding: 20px; */
 
 }
 
@@ -145,11 +145,14 @@ span {
 }
 
 /********CAROUSEL*************/
+.carousel-section {
+    padding: 50px;
+}
 
 .carousel {
     position: relative;
-    height: 600px;
-    width: 80%;
+    height: 300px;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -163,12 +166,15 @@ span {
     background: rgb(157, 129, 137, .5);
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .carousel_track {
     padding: 0;
     margin: 0;
     list-style: none;
+    height: 100%;
+    transition: transform 650ms ease-in;
 }
 
 .carousel_slide {
@@ -199,23 +205,12 @@ span {
     width: 12px;
 }
 
-.carousel_nav {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px 0;
-    margin: 0 15px;
-}
-
-.carousel_indicator {
-    border: 0;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background-color: white;
-}
-
 .carousel_indicator.current_slide {
     background-color: rgb(0, 0, 0, .4);
+}
+
+.carousel-words {
+    font-size: 1.2em;
 }
 
 
@@ -248,12 +243,13 @@ span {
     flex-wrap: wrap;
     padding: 20px;
     align-content: center;
+
 }
 
 .card {
     align-self: center;
-    width: 50%;
-    margin: 50px;
+    width: 70%;
+    margin: 0 50px;
     padding: 10px;
     background-color: rgb(80, 132, 132, .01);
 }
@@ -332,4 +328,12 @@ input {
     background-color: rgb(157, 129, 137, .5);
     text-align: center;
     padding-top: 5px;
+}
+
+
+
+
+/******Project card test*******/
+.test {
+    width: 60%;
 }
