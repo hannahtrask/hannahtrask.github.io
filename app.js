@@ -44,4 +44,3 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
 
 // OTHER JQUERY EVENTS
 
-
