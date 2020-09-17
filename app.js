@@ -13,36 +13,7 @@ console.log('jquery linked');
 let sheetAsJSON =
 	'https://spreadsheets.google.com/feeds/list/1ZLt9vCIk7jeJkFNivzKThYBwhRwlu3JCcRIsmAKSKzk/od6/public/values?alt=json';
 
-//this call will grab the info from the google sheet
-$.ajax({ url: sheetAsJSON }).then((data) => {
-	//this logs to check I've called the data
-	console.log(data.feed.entry);
 
-    //this variable grabs all card-container classes
-    const $project = $('.card-container');
-    
-    //this loops through the provided array in data
-	const projects = data.feed.entry.forEach((project) => {
-		const $newProjectDiv = $('<div>').addClass('card');
-        const $newInnerDiv = $('<div>').addClass('.card-body');
-		const $image = $('<img>')
-			.attr('src', project.gsx$image.$t)
-			.addClass('card-img-top');
-        const $title = $('<h5>').text(project.gsx$title.$t).addClass('card-title');
-        const $cardDescription = $('<p>').text(project.gsx$description.$t).addClass('card-text');
-
-        
-        $project.append($newProjectDiv);
-        $newProjectDiv.append($title);
-        $title.append($image);
-        $title.append($cardDescription);
-	});
-    
-
-});
-
-
-// OTHER EVENTS
 
 
 //////EMAILS from emailJS API
@@ -67,18 +38,16 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
             
 
 ////////////////////////////////////////////////////////////////
-
-
 ////CAROUSEL
 //vanilla JS
 
 
 /* VARIABLES!! */
-const track = document.querySelector('.carousel_track');
+const track = document.querySelector('.carousel-track');
 //makes array from all potential info
 const slides = Array.from(track.children);
-const nextButton = document.querySelector('.carousel_button--right');
-const prevButton = document.querySelector('.carousel_button--left');
+const nextButton = document.querySelector('.carousel-button--right');
+const prevButton = document.querySelector('.carousel-button--left');
 
 //get size of one slide because all slides are same width
 const slideWidth = slides[0].getBoundingClientRect().width;
@@ -126,3 +95,29 @@ nextButton.addEventListener('click', event => {
 })
 
 ///////////////////////////////////////////
+//PROJECT CAROUSEL
+///////////////////////
+
+$.ajax({ url: sheetAsJSON }).then((data) => {
+	//this logs to check I've called the data
+	console.log(data.feed.entry);
+
+	//this variable grabs the card-track container
+	const $projectSection = $('.card-track');
+
+	//this loops through the provided array in data
+	const projects = data.feed.entry.forEach((project) => {
+        const $newCard = $('<div>').addClass('project-card');
+        const $newTitle = $('<h2>').text(project.gsx$title.$t);
+        const $newDescription = $('<p>').text(project.gsx$description.$t);
+        const $newPhotoDiv = $('<div>').addClass('project-picture');
+        const $newProjPhoto = $('<img>')
+									.attr('src', project.gsx$image.$t)
+                                    .addClass('test');
+        const $newLink = $('<a>').att-
+
+        $projectSection.append($newCard);
+        $newCard.append($newTitle).append($newDescription).append($newPhotoDiv);
+        $newPhotoDiv.append($newProjPhoto);
+	});
+});

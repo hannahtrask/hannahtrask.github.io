@@ -72,12 +72,6 @@
         font-size: 1.3em;
     }
 
-    .card {
-        border: 20px solid transparent;
-        width: 50%;
-        margin: 0 5px;
-    }
-
     .bg-dark.p-4.p-5 {
     display: flex;
     }
@@ -90,11 +84,11 @@
         grid-row: 3;
   }
    
-  .carousel-section {
+    .carousel-section {
       padding-top: 200px;
   }
 
-  .carousel {
+    .carousel {
       width: 70%;
   }
 
