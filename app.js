@@ -45,7 +45,7 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
 // OTHER EVENTS
 
 
-//////emails from emailJS API
+//////EMAILS from emailJS API
 ///vanilla JS
             window.onload = () => {
 							document
@@ -66,6 +66,63 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
             })();
             
 
+////////////////////////////////////////////////////////////////
+
 
 ////CAROUSEL
+//vanilla JS
 
+
+/* VARIABLES!! */
+const track = document.querySelector('.carousel_track');
+//makes array from all potential info
+const slides = Array.from(track.children);
+const nextButton = document.querySelector('.carousel_button--right');
+const prevButton = document.querySelector('.carousel_button--left');
+
+//get size of one slide because all slides are same width
+const slideWidth = slides[0].getBoundingClientRect().width;
+
+
+
+/* FUNCTIONS! */
+//LOOPS through slide array with forEach(obj, index)
+//styles each based on index
+//allows you to add more later
+const slidePosition = (slide, index) => {
+    slide.style.left = slideWidth * index + 'px';
+}
+//function call
+slides.forEach(slidePosition);
+
+//FUNCTION that moves slides
+const moveToSlide = (track, currentSlide, targetSlide) => {
+    //                                         amount to move
+    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+    // changes slide class, removes from last slide adds to next slide
+	currentSlide.classList.remove('current-slide');
+	targetSlide.classList.add('current-slide');
+}
+
+
+//CLICK event, moves slides left
+prevButton.addEventListener('click', event => {
+    const currentSlide = track.querySelector('.current-slide');
+    const prevSlide = currentSlide.previousElementSibling;
+
+    // calls moveToSlide function
+    //                              takes spot of targetSlide param
+    moveToSlide(track, currentSlide, prevSlide);
+})
+
+//CLICK event, moves slides right
+nextButton.addEventListener('click', event => {
+    const currentSlide = track.querySelector('.current-slide');
+    const nextSlide = currentSlide.nextElementSibling;
+
+    // calls moveToSlide function
+    //                              takes spot of targetSlide param
+    moveToSlide(track, currentSlide, nextSlide);
+})
+
+///////////////////////////////////////////
