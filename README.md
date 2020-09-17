@@ -9,7 +9,7 @@ My schedule for the upcoming week.
 |Day 1| Project Description | Complete
 |Day 2| Wireframes / Priority Matrix / Timeline | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
-|Day 4| Contact form and Carousel/cards | Incomplete
+|Day 4| Contact form and Carousel/cards | Complete
 |Day 5| Final Touches | Incomplete
 |Day 5| Present | Incomplete
 
@@ -93,15 +93,15 @@ Below is the time frame I have constructed for this development cycle. Time esti
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Basic HTML structure/CSS styles | high | 2hr | hr |
-| Project section | high | 3hr | hr |
-| Nav w/ flexbox | high | 2hr | hr |  
-| About me section | high | 2hr|  hr | 
-| other embellishments and fun things | medium | 3hr | hr|
+| Basic HTML structure/CSS styles | high | 2hr | 1.5hr |
+| Project section | high | 3hr | 4hr |
+| Nav w/ flexbox | high | 2hr | 2hr |  
+| About me section | high | 2hr|  2.5hr | 
+| other embellishments and fun things | medium | 3hr | 2hr|
 | API | high | 3.5hrs|  hr | 
-| Media queries tablet | high | 1.5hr | hr |
-| Media queries desktop | high | 1.5hr | hr |
-| Social media icons and clickable profile image (linkedIn) | low | 1.5hr |  hr |
+| Media queries tablet | high | 1.5hr | 2hr |
+| Media queries desktop | high | 1.5hr | 2hr |
+| Social media icons and clickable profile image (linkedIn) | low | 1.5hr |  .5hr |
 | Total | high priotity! | 20hrs| hrs |
 
 #### PostMVP
@@ -109,17 +109,17 @@ Below is the time frame I have constructed for this development cycle. Time esti
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
 | Fade on scroll | low | 3hr | hr |
-| Nav doesn't leave top of screen | low | 2hr | hr |
+| Nav doesn't leave top of screen | low | 2hr | .5hr |
 | Big words on hover | low | 1.5hr | hr |
-| Incorporate bootstrap | high | 3hr | hr |
+| Incorporate bootstrap | high | 3hr | 1hr |
 | Incorporate materialize | medium | 3hr | hr |
 | Design my own logo | low | 2.5hr | hr |
 | Total | medium priority! | 15hrs| hrs |
 
 ## Additional Libraries
 
--library
--library
+* [Bootstrap.js](https://getbootstrap.com/)
+* [jQuery](https://jquery.com/)
 
 ## Code Snippet
 
