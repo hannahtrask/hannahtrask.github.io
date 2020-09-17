@@ -214,6 +214,10 @@ span {
     background-color: white;
 }
 
+.carousel_indicator.current_slide {
+    background-color: rgb(0, 0, 0, .4);
+}
+
 
 /*********PROJECTS SECTION*********/
 

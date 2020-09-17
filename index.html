@@ -14,21 +14,6 @@
     <!--CONTACT FORM JS-->
     <title>hannah catherine trask</title>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function () {
-                emailjs.init('user_KBxEcbif77Xh0iNNI4uvN');
-            })();
-        </script>
-        <script type="text/javascript">
-            window.onload = function () {
-                document.getElementById('contact-form').addEventListener('submit', function (event) {
-                    event.preventDefault();
-                    // generate the contact number value
-                    this.contact_number.value = Math.random() * 100000 | 0;
-                    emailjs.sendForm('service_q6wrfnf', 'template_1fa2kx4', this);
-                });
-            }
-        </script>
 </head>
 
 <body>
@@ -101,7 +86,7 @@
         </button>
 
         <div class="carousel_nav">
-            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator current_slide"></button>
             <button class="carousel_indicator"></button>
             <button class="carousel_indicator"></button>
         </div>
