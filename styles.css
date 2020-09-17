@@ -25,7 +25,7 @@ mountbatten pink: rgb(157, 129, 137)
 */
 
 body {
-    background-color: rgb(157, 129, 137, .3);
+    background-color: rgb(202, 186, 200, .5);
 }
 
 /*****NAV BAR AND HEADER******/
@@ -260,8 +260,8 @@ span {
     text-align: center;
     width: 350px;
     height: 80%;
-    background-color:rgb(80, 132, 132, .5);
-    border: 1px solid rgb(80, 132, 132, .8);
+    background-color:rgb(80, 132, 132, .3);
+    border: 1px solid rgb(80, 132, 132, .7);
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
