@@ -1,4 +1,4 @@
-# ![Imgur](https://i.imgur.com/gpD4Z5km.jpg) Unit 1 Portfolio Project
+# Unit 1 Portfolio Project
 
 ## Project Schedule
 
@@ -17,9 +17,7 @@ My schedule for the upcoming week.
 
 My unit 1 project is a portfolio website page. There are three sections— an about section, a projects section, and a contact me form. I chose to use two [typefaces](https://fonts.google.com/specimen/Arapey?query=arapey#license), for simplicity's sake: a serif font called Arapey, which emphasizes bold strokes and a relaxed rhythmic style, and Montserrat, a sans-serif typeface that is easy to read, elegant, and simple.
 
-For a color [palette](https://coolors.co/508484-d6ba73-ffcad4-cabac8-9d8189), I chose to work with a combination of cool and warm hues found in nature each season of the year. This represents the beauty in dichotomy and change— and emphasizes the importance of the whole to create a fluid, beautiful piece.
-
-I highlight the beauty in simple design in my portfolio, and I am looking forward to doing more work in the future.
+For a color [palette](https://coolors.co/508484-d6ba73-ffcad4-cabac8-9d8189), I chose to work with a combination of cool and warm hues. This represents the beauty in dichotomy and change— and emphasizes the importance of the whole to create a fluid piece.
 
 Here are a few links to some portfolio websites I drew inspiration from:<br>
 Uses fun design/imagery to draw in the user.
