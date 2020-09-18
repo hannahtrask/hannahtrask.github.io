@@ -125,23 +125,28 @@ Below is the time frame I have constructed for this development cycle. Time esti
 
 ## Code Snippet
 
-This slide was super
+This carousel was really interesting to figure out— I know it seems obvious, but figuring out the logic to move the slides left and right was more involved than I thought it would be. The code required to do (what appeared to be) such a simple thing was really illuminating about what this career path may be like. Overall, this has been a really good experience.
 
 ```
-const slidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
-}
-//function call
-slides.forEach(slidePosition);
+//CLICK event, moves slides left
+prevButton.addEventListener('click', event => {
+    const currentSlide = track.querySelector('.current-slide');
+    const prevSlide = currentSlide.previousElementSibling;
 
-//FUNCTION that moves slides
-const moveToSlide = (track, currentSlide, targetSlide) => {
-    //                                         amount to move
-    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-    // changes slide class, removes from last slide adds to next slide
-	currentSlide.classList.remove('current-slide');
-	targetSlide.classList.add('current-slide');
-}
+    // calls moveToSlide function
+    //                              takes spot of targetSlide param
+    moveToSlide(track, currentSlide, prevSlide);
+})
+
+//CLICK event, moves slides right
+nextButton.addEventListener('click', event => {
+    const currentSlide = track.querySelector('.current-slide');
+    const nextSlide = currentSlide.nextElementSibling;
+
+    // calls moveToSlide function
+    //                              takes spot of targetSlide param
+    moveToSlide(track, currentSlide, nextSlide);
+})
 ```
 This section belongs to a code snippet that has become my baby and makes me feel smart.
 
