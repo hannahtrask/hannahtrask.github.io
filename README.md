@@ -116,10 +116,13 @@ Below is the time frame I have constructed for this development cycle. Time esti
 | Clean up | medium/high | 2.5hr | 3hr |
 | Total | medium priority! | 15hrs| 11.5hrs |
 
-## Additional Libraries
+## Additional Libraries && Sources
 
 * [Bootstrap.js](https://getbootstrap.com/)
 * [jQuery](https://jquery.com/)
+* [FontAwesome](https://fontawesome.com/icons?d=gallery)
+* [Coolors.co](https://coolors.co/)
+* [GoogleFonts](https://fonts.google.com/)
 
 ## Code Snippet
 
