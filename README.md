@@ -108,7 +108,7 @@ Below is the time frame I have constructed for this development cycle. Time esti
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Fade on scroll | low | 3hr | hr |
+| Design own logo | low | 3hr | 1hr |
 | Nav doesn't leave top of screen | low | 2hr | 1.5hr |
 | Carousel gallery | low | 1.5hr | 3hr |
 | Incorporate bootstrap | high | 3hr | 1hr |
