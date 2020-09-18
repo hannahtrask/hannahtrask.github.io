@@ -93,7 +93,8 @@ Below is the time frame I have constructed for this development cycle. Time esti
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Basic HTML structure/CSS styles | high | 2hr | 1.5hr |
+| Basic HTML structure | high | 2hr | 1.5hr |
+| CSS Styles | high | 2hr | 3hr |
 | Project section | high | 3hr | 4hr |
 | Nav w/ flexbox | high | 2hr | 3.5hr |  
 | About me section | high | 2hr|  2.5hr | 
@@ -102,7 +103,7 @@ Below is the time frame I have constructed for this development cycle. Time esti
 | Media queries tablet | high | 1.5hr | 2hr |
 | Media queries desktop | high | 1.5hr | 2hr |
 | Social media icons and clickable profile image (linkedIn) | low | 1.5hr |  .5hr |
-| Total | high priotity! | 20hrs| 21.5hrs |
+| Total | high priotity! | 20hrs| 25hrs |
 
 #### PostMVP
 
@@ -112,9 +113,9 @@ Below is the time frame I have constructed for this development cycle. Time esti
 | Nav doesn't leave top of screen | low | 2hr | 1.5hr |
 | Carousel gallery | low | 1.5hr | 3hr |
 | Incorporate bootstrap | high | 3hr | 1hr |
-| Incorporate materialize | medium | 3hr | hr |
+| Incorporate materialize | medium | 3hr | 0hr |
 | Embellishments/clean up | medium/high | 2.5hr | 3hr |
-| Total | medium priority! | 15hrs| hrs |
+| Total | medium priority! | 15hrs| 9.5hrs |
 
 ## Additional Libraries
 
