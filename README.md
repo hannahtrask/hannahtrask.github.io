@@ -103,7 +103,8 @@ Below is the time frame I have constructed for this development cycle. Time esti
 | Media queries tablet | high | 1.5hr | 2hr |
 | Media queries desktop | high | 1.5hr | 2hr |
 | Social media icons and clickable profile image (linkedIn) | low | 1.5hr |  .5hr |
-| Total | high priotity! | 20hrs| 24hrs |
+| Functional Contact Form | medium | 1hr | 2hr |
+| Total | high priotity! | 20hrs| 26hrs |
 
 #### PostMVP
 
@@ -124,6 +125,22 @@ Below is the time frame I have constructed for this development cycle. Time esti
 
 ## Code Snippet
 
+```
+const slidePosition = (slide, index) => {
+    slide.style.left = slideWidth * index + 'px';
+}
+//function call
+slides.forEach(slidePosition);
+
+//FUNCTION that moves slides
+const moveToSlide = (track, currentSlide, targetSlide) => {
+    //                                         amount to move
+    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+    // changes slide class, removes from last slide adds to next slide
+	currentSlide.classList.remove('current-slide');
+	targetSlide.classList.add('current-slide');
+}
+```
 This section belongs to a code snippet that has become my baby and makes me feel smart.
 
 ## Issues and Resolutions
