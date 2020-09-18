@@ -103,7 +103,7 @@ Below is the time frame I have constructed for this development cycle. Time esti
 | Media queries tablet | high | 1.5hr | 2hr |
 | Media queries desktop | high | 1.5hr | 2hr |
 | Social media icons and clickable profile image (linkedIn) | low | 1.5hr |  .5hr |
-| Total | high priotity! | 20hrs| 25hrs |
+| Total | high priotity! | 20hrs| 24hrs |
 
 #### PostMVP
 
@@ -113,9 +113,9 @@ Below is the time frame I have constructed for this development cycle. Time esti
 | Nav doesn't leave top of screen | low | 2hr | 1.5hr |
 | Carousel gallery | low | 1.5hr | 3hr |
 | Incorporate bootstrap | high | 3hr | 1hr |
-| Incorporate materialize | medium | 3hr | 0hr |
+| Finishing touches | medium | 3hr | 2hr |
 | Embellishments/clean up | medium/high | 2.5hr | 3hr |
-| Total | medium priority! | 15hrs| 9.5hrs |
+| Total | medium priority! | 15hrs| 11.5hrs |
 
 ## Additional Libraries
 
