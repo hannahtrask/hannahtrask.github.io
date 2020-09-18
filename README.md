@@ -10,7 +10,7 @@ My schedule for the upcoming week.
 |Day 2| Wireframes / Priority Matrix / Timeline | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 4| Contact form and Carousel/cards | Complete
-|Day 5| Final Touches | Incomplete
+|Day 5| Final Touches | Complete
 |Day 5| Present | Incomplete
 
 ## Project Description
@@ -115,7 +115,7 @@ Below is the time frame I have constructed for this development cycle. Time esti
 | Carousel gallery | low | 1.5hr | 3hr |
 | Incorporate bootstrap | high | 3hr | 1hr |
 | Finishing touches | medium | 3hr | 2hr |
-| Embellishments/clean up | medium/high | 2.5hr | 3hr |
+| Clean up | medium/high | 2.5hr | 3hr |
 | Total | medium priority! | 15hrs| 11.5hrs |
 
 ## Additional Libraries
@@ -152,7 +152,9 @@ This section belongs to a code snippet that has become my baby and makes me feel
 
 ## Issues and Resolutions
 
-This section exists in honor of all the issues that had me up late with a large glass of wine and Taylor Swift's new album.
+What I have found with these kinds of projects is that the biggest hiccups tend to be relatively small fixes. It seems like this career path requires you to be nit-picky, but not a perfectionist. Truly, figuring out this problem took me more hours than I care to admit. I enjoyed this project— it was really cool to start to understand how my process works.
+
 #### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+**ERROR**: jQuery.Deferred exception: $projectSection.append is not a function TypeError: $projectSection.append is not a function
+                        
+**RESOLUTION**: Missing $ symbol to select (.card-track)
