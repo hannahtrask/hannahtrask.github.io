@@ -125,6 +125,8 @@ Below is the time frame I have constructed for this development cycle. Time esti
 
 ## Code Snippet
 
+This slide was super
+
 ```
 const slidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
